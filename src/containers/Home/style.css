@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.home {
+  display: flex;
+  padding: 64px 16px;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.card-container {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.map {
+  width: 300px;
+}
+
+.source {
+  font-size: 10px;
+  margin-bottom: 0;
+}
+
+.topContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 48px 0 48px;
+}
+
+.toggleDiv {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+.citiesDropdown {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 2px;
+  border-width: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-size {
+    width: 300px;
+    margin: 20px;
+  }
+
+  .topContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .toggleDiv {
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .citiesDropdown {
+    margin-bottom: 24px;
+  }
+}
